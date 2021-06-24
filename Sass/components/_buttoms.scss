@@ -1,0 +1,20 @@
+//! no remove
+@import "./utilities/variables";
+
+.btn {
+    border: none;
+
+    padding: 0.8em 2rem;
+
+    background-color: $buttons;
+
+    border: 1px solid $buttons;
+    border-radius: 1.25rem;
+    cursor: pointer;
+
+    font-weight: bold;
+
+    &:hover{
+        border: 1px solid $buttons;
+    }
+}

@@ -1,0 +1,139 @@
+//* Base
+
+@import "./base/reset";
+@import "./base/typography";
+
+//* Components
+@import "./components/buttoms";
+
+//* Layout
+
+@import "./layout/flex";
+
+//* Utilities
+@import "./utilities/mixins";
+@import "./utilities/variables";
+
+.main {
+    .container {
+        margin: 6rem auto;
+        display: flex;
+        flex-wrap: wrap;
+
+        .card-1{
+            @include width(18.25rem, 26.688rem);
+            margin: 0 auto;
+
+            padding: 2.5rem;
+
+            background-color: $bright-orange;
+
+            transform: translateX(10.8rem);
+
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+
+        }
+        .card-2 {
+            @include width(18.25rem, 26.688rem);
+            margin: 0 auto;
+
+            padding: 2.5rem;
+
+            background-color: $dark-cyan;
+        }
+
+        .card-3{
+            @include width(18.25rem, 26.688rem);
+            margin: 0 auto;
+
+            padding: 2.5rem;
+
+            background-color: $very-dark-cyan;
+
+            transform: translateX(-10.9rem);
+
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        .icon{
+            margin-bottom: 2rem;
+        }
+
+        .move{
+            margin-block: 2rem 4rem;
+        }
+
+        .orange{
+            color: $bright-orange;
+
+            &:hover {
+                background-color: $bright-orange;
+                color: $paragraphs;
+            }
+        }
+
+        .cyan {
+            color: $dark-cyan;
+
+            &:hover {
+                background-color: $dark-cyan;
+                color: $paragraphs;
+            }
+        }
+
+        .dark-cyan {
+            color: $very-dark-cyan;
+
+            &:hover {
+                background-color: $very-dark-cyan;
+                color: $paragraphs;
+            }
+        }
+
+
+        @media (max-width: 1000px){
+            flex-direction: column;
+            margin: 6rem auto;
+
+            .card-1{
+                transform: translateX(0rem);
+                @include width(18.25rem, 22.688rem);
+                border-radius: 5px 5px 0px 0px;
+            }
+
+            .card-2{
+                @include width(18.25rem, 22.688rem);
+            }
+
+            .card-3{
+                transform: translateX(0rem);
+                @include width(18.25rem, 22.688rem);
+                border-radius: 0px 0px 5px 5px;
+            }
+
+            .move{
+                margin-block: 1rem 0.5rem;
+            }
+        }
+
+        @media (min-width: 1400px){
+            body{
+                font-size: 20px;
+            }
+            .card-1{
+                @include width(19.25rem, 23.688rem);
+            }
+
+            .card-2{
+                @include width(19.25rem, 23.688rem);
+            }
+
+            .card-3{
+                @include width(19.25rem, 23.688rem);
+            }
+
+        }
+    }
+}

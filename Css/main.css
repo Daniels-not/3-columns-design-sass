@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+p {
+  line-height: 24px; }
+
+body {
+  font-size: 15px; }
+
+.title {
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  color: #f2f2f2; }
+
+.description {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75); }
+
+.btn {
+  border: none;
+  padding: 0.8em 2rem;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 1.25rem;
+  cursor: pointer;
+  font-weight: bold; }
+  .btn:hover {
+    border: 1px solid #f2f2f2; }
+
+.main .container {
+  margin: 6rem auto;
+  display: flex;
+  flex-wrap: wrap; }
+  .main .container .card-1 {
+    width: 18.25rem;
+    height: 26.688rem;
+    margin: 0 auto;
+    padding: 2.5rem;
+    background-color: #e38826;
+    transform: translateX(10.8rem);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px; }
+  .main .container .card-2 {
+    width: 18.25rem;
+    height: 26.688rem;
+    margin: 0 auto;
+    padding: 2.5rem;
+    background-color: #006970; }
+  .main .container .card-3 {
+    width: 18.25rem;
+    height: 26.688rem;
+    margin: 0 auto;
+    padding: 2.5rem;
+    background-color: #004241;
+    transform: translateX(-10.9rem);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; }
+  .main .container .icon {
+    margin-bottom: 2rem; }
+  .main .container .move {
+    margin-block: 2rem 4rem; }
+  .main .container .orange {
+    color: #e38826; }
+    .main .container .orange:hover {
+      background-color: #e38826;
+      color: rgba(255, 255, 255, 0.75); }
+  .main .container .cyan {
+    color: #006970; }
+    .main .container .cyan:hover {
+      background-color: #006970;
+      color: rgba(255, 255, 255, 0.75); }
+  .main .container .dark-cyan {
+    color: #004241; }
+    .main .container .dark-cyan:hover {
+      background-color: #004241;
+      color: rgba(255, 255, 255, 0.75); }
+  @media (max-width: 1000px) {
+    .main .container {
+      flex-direction: column;
+      margin: 6rem auto; }
+      .main .container .card-1 {
+        transform: translateX(0rem);
+        width: 18.25rem;
+        height: 22.688rem;
+        border-radius: 5px 5px 0px 0px; }
+      .main .container .card-2 {
+        width: 18.25rem;
+        height: 22.688rem; }
+      .main .container .card-3 {
+        transform: translateX(0rem);
+        width: 18.25rem;
+        height: 22.688rem;
+        border-radius: 0px 0px 5px 5px; }
+      .main .container .move {
+        margin-block: 1rem 0.5rem; } }
+  @media (min-width: 1400px) {
+    .main .container body {
+      font-size: 20px; }
+    .main .container .card-1 {
+      width: 19.25rem;
+      height: 23.688rem; }
+    .main .container .card-2 {
+      width: 19.25rem;
+      height: 23.688rem; }
+    .main .container .card-3 {
+      width: 19.25rem;
+      height: 23.688rem; } }

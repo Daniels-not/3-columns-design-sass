@@ -1,0 +1,4 @@
+@mixin width($rem1, $rem2){
+    width: max($rem1);
+    height: max($rem2);
+}
