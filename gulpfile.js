@@ -14,7 +14,7 @@
     //.pipe(gulp.dest('./Css'))
     //? Stream changes to all browers
     //.pipe(browserSync.stream());
-}
+//}
 
 //function watch() {
     //browserSync.init({
@@ -26,7 +26,7 @@
   // gulp.watch('./*html').on('change', browserSync.reload);
     //? strem any js file
     //gulp.watch('./js/**/*.js').on('change', browserSync.reload);
-}
+//}
 
 //exports.style = style;
 //exports.watch = watch;
