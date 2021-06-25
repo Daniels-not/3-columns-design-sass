@@ -20,7 +20,7 @@
     //browserSync.init({
        // server: {
           //  baseDir: './'
-        }
+        //}
    // });
    // gulp.watch('./Sass/**/*.scss', style);
   // gulp.watch('./*html').on('change', browserSync.reload);
